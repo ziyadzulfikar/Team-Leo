@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="./index_files/style.css">
     <link href="./index_files/css" rel="stylesheet" type="text/css">
     <script src="./index_files/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
 </head>
 <body>
     <div id="header-holder">
@@ -42,7 +43,7 @@
                         <div class="font-weight-bold">Welcome to<br>Ezad Developers.</div>
                     </div>
                     <div class="col-md-6 col-12">
-                            <img src="Image.png" alt="" class="img-fluid">
+                            <img id="Animation1" src="Image.png" alt="" class="img-fluid" data-aos="fade-left">
                     </div>
                 </div>
             </div>
@@ -53,7 +54,7 @@
             <div class="container">
                 <div class="row row2">
                     <div class="col-md-6 col-12">
-                        <div class="img-holder">
+                        <div class="img-holder" data-aos="fade-right">
                             <img src="feature1.png" class="img-fluid" alt="">
                         </div>
                     </div>
@@ -64,7 +65,7 @@
                 </div>
                 <div class="row row3">
                     <div class="col-md-6 col-12">
-                        <div class="img-holder">
+                        <div class="img-holder" data-aos="fade-left">
                             <img src="feature2.png" alt="" class="img-fluid">
                         </div>
                     </div>
@@ -78,7 +79,7 @@
                 </div>
                 <div class="row row2">
                     <div class="col-md-6 col-12">
-                        <div class="img-holder">
+                        <div class="img-holder" data-aos="fade-right">
                             <img src="office.png" class="img-fluid" alt="">
                         </div>
                     </div>
@@ -92,7 +93,7 @@
                 </div>
                 <div class="row row3">
                     <div class="col-md-6 col-12">
-                        <div class="img-holder">
+                        <div class="img-holder" data-aos="fade-left">
                             <img src="feature3.png" alt="" class="img-fluid">
                         </div>
                     </div>
@@ -108,7 +109,7 @@
                 </div>
                 <div class="row row2">
                     <div class="col-md-6 col-12">
-                        <div class="img-holder">
+                        <div class="img-holder" data-aos="fade-right">
                             <img src="feature4.png" class="img-fluid" alt="">
                         </div>
                     </div>
@@ -119,7 +120,7 @@
                 </div>
                 <div class="row row3">
                     <div class="col-md-6 col-12">
-                        <div class="img-holder">
+                        <div class="img-holder" data-aos="fade-left">
                             <img src="feature5.png" alt="" class="img-fluid">
                         </div>
                     </div>
@@ -131,7 +132,7 @@
                 </div>
                 <div class="row row2">
                     <div class="col-md-6 col-12">
-                        <div class="img-holder">
+                        <div class="img-holder" data-aos="fade-right">
                             <img src="feature6.png" class="img-fluid" alt="">
                         </div>
                     </div>
@@ -177,24 +178,8 @@
         </div>
     </footer>
 
-    <script type="text/javascript">
-        $(document).ready(function(){ 
-     
-            $(window).scroll(function(){
-                if ($(this).scrollTop() > 100) {
-                    $('.scrollup').fadeIn();
-                } else {
-                    $('.scrollup').fadeOut();
-                }
-            }); 
-     
-            $('.scrollup').click(function(){
-                $("html, body").animate({ scrollTop: 0 }, 600);
-                return false;
-            });
-     
-        });
-    </script>
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyloadxt/1.1.0/jqlight.lazyloadxt.min.js'></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -202,5 +187,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script>"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"</script>
+
 </body>
 </html>
