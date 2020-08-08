@@ -1,5 +1,5 @@
 AOS.init({
-    duration: 1200,
+    duration: 1000,
   })
 
 $(document).ready(function(){ 
@@ -57,3 +57,31 @@ $(document).ready(function(){
     $(window).scroll(navbarCollapse);
 
 })(jQuery);
+
+var textWrapper = document.querySelector('.ml2');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: 1})
+  .add({
+    targets: '.ml2 .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  })
+
+  var textWrapper = document.querySelector('.ml3');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+  
+  anime.timeline({loop: 1})
+    .add({
+      targets: '.ml3 .letter',
+      scale: [4,1],
+      opacity: [0,1],
+      translateZ: 0,
+      easing: "easeOutExpo",
+      duration: 950,
+      delay: (el, i) => 200*i
+    })  
