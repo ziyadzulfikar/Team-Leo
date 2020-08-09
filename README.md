@@ -1,3 +1,3 @@
-# MyWebsite
+# Team-Leo
 A sample website
-https://ziyadzulfikar.github.io/MyWebsite/
+https://ziyadzulfikar.github.io/Team-Leo/
