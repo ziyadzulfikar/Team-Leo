@@ -299,6 +299,9 @@ html {
     cursor: pointer;
     display: block;
 }
+.chat_on:hover{
+  background-color: gray;
+}
 .chat_on_icon{
     color:#fff;
     font-size:25px;
