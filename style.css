@@ -19,6 +19,7 @@
 .ml2 .letter {
   display: inline-block;
   line-height: 1em;
+  font-style:sans-serif;
 }
 .ml3 {
   font-weight: 900;
