@@ -32,7 +32,7 @@
                                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
                                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact" data-toggle="modal" data-target="#modalContactForm">Contact</a></li>
-                                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#User" data-toggle="modal" data-target="#modalLRForm">User</a></li>
+                                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#User" data-toggle="modal" data-target="#modalLoginForm">User</a></li>
                             </ul>
                         </div>
                     </div>
@@ -189,7 +189,7 @@
                                     <h2>Nimisha</h2>
                                     <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                                     <p>nimisha@example.com</p>
-                                    <p><button class="button">Contact</button></p>
+                                    <p><button class="button" data-toggle="modal" data-target="#modalContactNimisha">Contact</button></p>
                                 </div>
                             </div>
                         </div>
@@ -201,7 +201,7 @@
                                     <h2>Varada</h2>
                                     <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                                     <p>varada@example.com</p>
-                                    <p><button class="button">Contact</button></p>
+                                    <p><button class="button" data-toggle="modal" data-target="#modalContactVarada">Contact</button></p>
                                 </div>
                             </div>
                         </div>
@@ -213,7 +213,7 @@
                                     <h2>Safwana</h2>
                                     <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                                     <p>safwana@example.com</p>
-                                    <p><button class="button">Contact</button></p>
+                                    <p><button class="button" data-toggle="modal" data-target="#modalContactSafwana">Contact</button></p>
                                 </div>
                             </div>
                         </div>
@@ -226,7 +226,7 @@
                                     <h2>Thabsheer</h2>
                                     <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                                     <p>thabsheer@example.com</p>
-                                    <p><button class="button">Contact</button></p>
+                                    <p><button class="button" data-toggle="modal" data-target="#modalContactThabsheer">Contact</button></p>
                                 </div>
                             </div>
                         </div>
@@ -237,7 +237,7 @@
                                     <h2>Ziyad</h2>
                                     <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                                     <p>ziyad@example.com</p>
-                                    <p><button class="button">Contact</button></p>
+                                    <p><button class="button" data-toggle="modal" data-target="#modalContactZiyad">Contact</button></p>
                                 </div>
                             </div>
                         </div>
@@ -291,111 +291,247 @@
             </div>
         </div>
 
- <!--Modal: Login / Register Form-->
-<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog cascading-modal" role="document">
-      <!--Content-->
-      <div class="modal-content">
-  
-        <!--Modal cascading tabs-->
-        <div class="modal-c-tabs">
-  
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
-                Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
-                Register</a>
-            </li>
-          </ul>
-  
-          <!-- Tab panels -->
-          <div class="tab-content">
-            <!--Panel 7-->
-            <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
-  
-              <!--Body-->
-              <div class="modal-body mb-1">
-                <div class="md-form form-sm mb-5">
-                  <i class="fas fa-envelope prefix"></i>
-                  <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+        <div><!-- Login-Popup -->
+            <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
                 </div>
-  
-                <div class="md-form form-sm mb-4">
-                  <i class="fas fa-lock prefix"></i>
-                  <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+                <div class="modal-body mx-3">
+                <div class="md-form mb-5">
+                    <i class="fas fa-envelope prefix grey-text"></i>
+                    <input type="email" id="defaultForm-email" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
                 </div>
-                <div class="text-center mt-2">
-                  <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
+        
+                <div class="md-form mb-4">
+                    <i class="fas fa-lock prefix grey-text"></i>
+                    <input type="password" id="defaultForm-pass" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
                 </div>
-              </div>
-              <!--Footer-->
-              <div class="modal-footer">
-                <div class="options text-center text-md-right mt-1">
-                  <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
-                  <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+        
                 </div>
-                <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
-              </div>
-  
+                <div class="modal-footer d-flex justify-content-center">
+                <button class="btn btn-deep-orange">Login</button>
+                </div>
             </div>
-            <!--/.Panel 7-->
-  
-            <!--Panel 8-->
-            <div class="tab-pane fade" id="panel8" role="tabpanel">
-  
-              <!--Body-->
-              <div class="modal-body">
-                <div class="md-form form-sm mb-5">
-                  <i class="fas fa-envelope prefix"></i>
-                  <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
-                </div>
-  
-                <div class="md-form form-sm mb-5">
-                  <i class="fas fa-lock prefix"></i>
-                  <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
-                </div>
-  
-                <div class="md-form form-sm mb-4">
-                  <i class="fas fa-lock prefix"></i>
-                  <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
-                  <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
-                </div>
-  
-                <div class="text-center form-sm mt-2">
-                  <button class="btn btn-info">Sign up <i class="fas fa-sign-in ml-1"></i></button>
-                </div>
-  
-              </div>
-              <!--Footer-->
-              <div class="modal-footer">
-                <div class="options text-right">
-                  <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
-                </div>
-                <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
-              </div>
             </div>
-            <!--/.Panel 8-->
-          </div>
-  
+            </div>
         </div>
-      </div>
-      <!--/.Content-->
-    </div>
-  </div>
-  <!--Modal: Login / Register Form-->
-  
-  <div class="text-center">
-    <a href="" class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm">Launch
-      Modal LogIn/Register</a>
-  </div>
+
+        <div>
+
+            <div class="modal fade" id="modalContactNimisha" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title w-100 font-weight-bold">Nimisha</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body mx-3">
+                            <div class="md-form mb-5">
+                                <i class="fas fa-user prefix grey-text"></i>
+                                <input type="text" id="form34" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="form34">Your name</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <input type="email" id="form29" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <i class="fas fa-tag prefix grey-text"></i>
+                                <input type="text" id="form32" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="form32">Subject</label>
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fas fa-pencil-alt prefix grey-text"></i>
+                                <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                                <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button class="btn btn-primary">Send <i class="fas fa-paper-plane ml-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modalContactVarada" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title w-100 font-weight-bold">Varada</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body mx-3">
+                            <div class="md-form mb-5">
+                                <i class="fas fa-user prefix grey-text"></i>
+                                <input type="text" id="form34" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="form34">Your name</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <input type="email" id="form29" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <i class="fas fa-tag prefix grey-text"></i>
+                                <input type="text" id="form32" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="form32">Subject</label>
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fas fa-pencil-alt prefix grey-text"></i>
+                                <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                                <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button class="btn btn-primary">Send <i class="fas fa-paper-plane ml-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modalContactSafwana" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title w-100 font-weight-bold">Safwana</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body mx-3">
+                            <div class="md-form mb-5">
+                                <i class="fas fa-user prefix grey-text"></i>
+                                <input type="text" id="form34" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="form34">Your name</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <input type="email" id="form29" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <i class="fas fa-tag prefix grey-text"></i>
+                                <input type="text" id="form32" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="form32">Subject</label>
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fas fa-pencil-alt prefix grey-text"></i>
+                                <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                                <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button class="btn btn-primary">Send <i class="fas fa-paper-plane ml-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modalContactThabsheer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title w-100 font-weight-bold">Thabsheer</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body mx-3">
+                            <div class="md-form mb-5">
+                                <i class="fas fa-user prefix grey-text"></i>
+                                <input type="text" id="form34" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="form34">Your name</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <input type="email" id="form29" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <i class="fas fa-tag prefix grey-text"></i>
+                                <input type="text" id="form32" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="form32">Subject</label>
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fas fa-pencil-alt prefix grey-text"></i>
+                                <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                                <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button class="btn btn-primary">Send <i class="fas fa-paper-plane ml-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modalContactZiyad" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title w-100 font-weight-bold">Ziyad</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body mx-3">
+                            <div class="md-form mb-5">
+                                <i class="fas fa-user prefix grey-text"></i>
+                                <input type="text" id="form34" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="form34">Your name</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <input type="email" id="form29" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                            </div>
+
+                            <div class="md-form mb-5">
+                                <i class="fas fa-tag prefix grey-text"></i>
+                                <input type="text" id="form32" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="form32">Subject</label>
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fas fa-pencil-alt prefix grey-text"></i>
+                                <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                                <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button class="btn btn-primary">Send <i class="fas fa-paper-plane ml-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
         <footer>
             <div class="container-fluid row4">
@@ -433,7 +569,7 @@
              <div id="Smallchat">
             <div class="Layout Layout-open Layout-expand Layout-right" style="background-color: #3F51B5;color: rgb(255, 255, 255);opacity: 5;border-radius: 10px;">
               <div class="Messenger_messenger">
-                <div class="Messenger_header" style="background-color: rgb(22, 46, 98); color: rgb(255, 255, 255);">
+                <div class="Messenger_header" style="background-color: #f7901e; color: rgb(255, 255, 255);">
                   <h4 class="Messenger_prompt">How can we help you?</h4> <span class="chat_close_icon"><i class="fas fa-times" aria-hidden="true"></i></span> </div>
                 <div class="Messenger_content">
                   <div class="Messages">
