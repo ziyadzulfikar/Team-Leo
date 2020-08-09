@@ -85,3 +85,19 @@ anime.timeline({loop: 1})
       duration: 950,
       delay: (el, i) => 200*i
     })  
+
+
+
+    
+    $(document).ready(function(){
+      $(".chat_on").click(function(){
+          $(".Layout").toggle();
+          $(".chat_on").hide(300);
+      });
+      
+         $(".chat_close_icon").click(function(){
+          $(".Layout").hide();
+             $(".chat_on").show(300);
+      });
+      
+  });
